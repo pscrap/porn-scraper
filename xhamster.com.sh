@@ -4,8 +4,8 @@ folder=$2
 if [ !-n $folder ]; then
         folder=`date +%Y%m%d-%H%M%S`
 fi
-mkdir $folder
-cd $folder
+mkdir ../$folder
+cd ../$folder
 mkdir pages
 cd pages
 curl $url > 1
